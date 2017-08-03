@@ -9,9 +9,9 @@ return{command: {action: "shoot"}}
 (function(){
     const turnDirections = ['right', 'left', 'about-face'];
     const index = Math.floor(Math.random() * 8);
-    const turnDirection = index === < 3 ? turnDirections[0]; : 
-                          index === < 6 ? turnDirections[1]; :
-                          index === < 8 ? turnDirections[2]; :
+    const turnDirection = index  < 3 ? turnDirections[0] : 
+                          index  < 6 ? turnDirections[1] :
+                          index  < 8 ? turnDirections[2] :
                           {};
     var counter = 0;
     const command = counter <= 2 ? {action: 'move', metadata:{} } :
@@ -23,4 +23,4 @@ return{command: {action: "shoot"}}
     else{counter++;}
 
   return{command, state: {counter}}
-}
+})
