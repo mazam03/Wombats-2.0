@@ -1,6 +1,6 @@
 (function(){
 
-return{command: "shoot"}
+return{command: {action: "shoot"}}
 
 
 })
